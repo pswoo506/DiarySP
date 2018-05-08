@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/edit_title_write"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:background="#efedbf"
+        android:hint="제목을 입력하세요." />
+
+    <ImageView
+        android:id="@+id/image_main"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:background="#87CE"
+        android:maxHeight="220dp"
+        android:maxWidth="220dp"
+        android:src="@drawable/boarder" />
+
+    <EditText
+        android:id="@+id/edit_contents_write"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_weight="3"
+        android:background="#e1f1cb"
+        android:gravity="top|left"
+        android:hint="내용을 입력하세요."
+        android:lines="15" />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:background="#e1f1cb">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="저장"
+            android:id="@+id/save_btn_write"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="사진"
+            android:id="@+id/btn_gallery"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
